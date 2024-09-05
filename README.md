@@ -1,20 +1,22 @@
 ![logo](https://github.com/mcgregol/WASP-N/blob/fe414bc097112d8816f5c115138489a68ba118dd/ACHIEVE%20Logo-Trans%281%29.png?raw=true)
 # WASP-N User Manual
 
+SK8TE is your tool to configure and manage Stryd sensors. Capabilities include player assignment, clock synchronization, hardware identification, and data extraction.
+
 ## Prerequisites
  - A Windows or iOS device
- - The WASP device will need to be connected to an existing WIFI network. From this network, you will need to provide the:
-    - SSID
-    - security type
-    - password (if applicable)
+ - If the WASP will be connecting to an existing WiFi network, you will need to provide the:
+    - SSID (name) of the existing network
+    - security type of the existing network
+    - password (if applicable) of the existing network
 
 > **Note:** If the network does not use DHCP, you will also need a static IP address from the network administrator to assign the WASP to.
 
 ## Usage
 
-The WASP has two colored LED lights. If the device is powered on, the **green** light will activate. Any changes to the current state of the device, such as a successful connection to a WiFi network, will activate the **red** light. See details below.
-
 The micro USB port located on the side of the device can be used to charge the device by plugging it into a wall, and also to communicate with the device when plugged into a computer.
+
+The WASP has two colored LED lights. If the device is powered on, the **green** light will activate. Any changes to the current state of the device, such as a successful connection to a WiFi network, will activate the **red** light. See details below.
 
 #### Green Status Light
 - Double flash indicates WASP joined a WiFi network.
@@ -37,9 +39,21 @@ If you wish to deactivate all wireless radios, or store the device away, enable 
 To enter **operational mode**, either press and hold the button, or connect the device to a power source via USB.
 > **Note:** To charge the device in sleep mode, attach the USB before powering the device off.
 
-## Configuration
+The WASP has the ability to connect to an existing network, or create one itself when a WiFi network is not available, or the quality is poor.
 
-There are currently two methods of configuring a WASP.
+### Using the WASP as an Access Point
+
+1. Set the WASP to **operational mode** using the button
+2. Click the button once again. Notice the green LED will now be flashing once, rather than bursts of two, indicating the WASP created an access point.
+3. On your device, navigate to WiFi settings and connect to the network named WASP-XXXXXX, where XXXXXX are the **last** six characters of the 11 digit serial number on the back of the WASP
+
+> **Warning:** Any devices you connect to the WASP's access point will **not** have an internet connection.
+
+The WASP is now visible to any devices that are connect to the access point. **Do not** try to access an external wifi network while using the WASP as an access point as there is a risk of data loss. After data collection, it will be necessary to connect to an external WiFi network in order to sync the data with the ACHIEVE platform.
+
+## Configuration for Connecting to an Existing Network
+
+There are currently two methods of configuring a WASP for use with an existing WiFi network.
 1. The **WASP Util** app available on the Apple App Store for iOS devices.
 2.  [**WASP Config Utility**](https://support.npe.fit/hc/en-us/article_attachments/9893868124308) for Windows
 
