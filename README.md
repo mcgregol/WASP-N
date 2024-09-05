@@ -1,8 +1,6 @@
 ![logo](https://github.com/mcgregol/WASP-N/blob/fe414bc097112d8816f5c115138489a68ba118dd/ACHIEVE%20Logo-Trans%281%29.png?raw=true)
 # WASP-N User Manual
 
-SK8TE is your tool to configure and manage Stryd sensors. Capabilities include player assignment, clock synchronization, hardware identification, and data extraction.
-
 ## Prerequisites
  - A Windows or iOS device
  - The WASP device will need to be connected to an existing WIFI network. From this network, you will need to provide the:
